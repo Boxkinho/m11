@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #3742fa;
+    color: white;
+    margin-bottom: 40px;
+}
+
+header li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header li {
+    display: inline;
+    margin-left: 16px;
+}
+
+#sobre {
+    margin-bottom: 56px;
+}
+
+#sobre .sobre_loja {
+    display: flex;
+}
+
+.sobre {
+    margin-left: 36px;
+}
+
+.sobre h2 {
+    border-bottom: 2px solid #3742fa;
+    color: #3742fa;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 16px 0;
+}
+
+.sobre_loja img {
+    height: 320px;
+    width: auto;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.produtos img {
+    width: 100%;
+}
+
+.produtos button {
+    height: 40px;
+    width: 100%;
+    margin-top: 16px;
+    cursor: pointer;
+    background-color: #3742fa;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    padding: 8px 0;
+}
+
+section h2 {
+    border-bottom: 2px solid #3742fa;
+    margin-bottom: 36px;
+    color: #3742fa;
+    padding: 16px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre_loja img {
+        width: 100%;
+    }
+
+    #sobre .sobre_loja {
+        display: block;
+    }
+
+    .sobre p {
+        width: 100%;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre_loja img {
+        width: 100%;
+    }
+
+    #sobre .sobre_loja {
+        display: block;
+    }
+
+    .sobre p {
+        width: 100%;
+    }
+
+    .sobre {
+        display: inline;
+        margin-left: 16px;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(1, 99%);
+    }
+
+    .produtos p {
+        width: 100%;
+    }
+}
